@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="fadeInContent()">
+    <style>
+         body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d1117;
+            color: #ffffff;
+        }
+        header {
+            background-color: #161b22;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: #facc15;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 400;
+            padding: 10px;
+        }
+        nav ul li a.active {
+            border-bottom: 2px solid #facc15;
+        }
+        .about {
+            padding: 80px 50px;
+            text-align: center;
+        }
+        .about h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .about-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: left;
+        }
+        .about-content img {
+            width: 300px;
+            border-radius: 10px;
+        }
+        .about-text {
+            max-width: 600px;
+        }
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .about-text .highlight {
+            color: #facc15;
+            font-weight: bold;
+        }
+        .fade-in {
+            opacity: 1 !important;
+            transform: translateX(0) !important;
+        }
+    </style>
+    <header>
+        <nav>
+            <div class="logo">About<span>Me.</span></div>
+            <ul>
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="about.html" class="active">ABOUT</a></li>
+            
+                <li><a href="portfolio.html">PROJECTS</a></li>
+            
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="about" id="about-section">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="potfolio pic.jpg" alt="Profile Picture" id="about-image">
+            <div class="about-text" id="about-text">
+                <p>My name is Oyugbo zita a sudent of lead city university studiying software enginneering and as a <span class="highlight">passionate student</span> eager to contribute to the ever-evolving world of technology, I am dedicated to learning and innovating in the field of <span class="highlight">software development</span>. With a keen interest in creating impactful solutions, I strive to enhance my skills and stay ahead of emerging trends, aiming to be part of the future of technological advancement.</p>
+                <p>My journey in tech is driven by a deep curiosity and a commitment to continuous learning. Whether it's building applications, exploring new programming paradigms, or collaborating on innovative projects, I am always excited to push boundaries and make a difference.</p>
+            </div>
+        </div>
+    </section>
+<script>
+function fadeInContent() {
+            document.getElementById("about-section").classList.add("fade-in");
+            document.getElementById("about-image").classList.add("fade-in");
+            document.getElementById("about-text").classList.add("fade-in");
+        }
+    </script>
+</body>
+</html>

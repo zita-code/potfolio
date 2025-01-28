@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d1117;
+            color: #ffffff;
+        }
+        header {
+            background-color: #161b22;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: #facc15;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 400;
+            padding: 10px;
+        }
+        nav ul li a.active {
+            border-bottom: 2px solid #facc15;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 50px;
+        }
+        .hero-content {
+            max-width: 50%;
+        }
+        .welcome {
+            color: #facc15;
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .contact-btn {
+            background-color: #facc15;
+            color: #000;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 20px;
+            border-radius: 12px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .hero-image img {
+            border-radius: 15px;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">About<span>Me.</span></div>
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            
+                <li><a href="portfolio.html">PROJECTS</a></li>
+            
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="welcome">Hello, Welcome</p>
+            <h1>I am zita oyugbo</h1>
+            <p class="description">As a passionate student eager to contribute to the ever-evolving world of technology, I am dedicated to learning and innovating in the field of software development. With a keen interest in creating impactful solutions, I strive to enhance my skills and stay ahead of emerging trends, aiming to be part of the future of technological advancement.</p>
+            <button class="contact-btn" onclick="window.location.href='contact.html'">Contact</button>
+
+        </div>
+        <div class="hero-image">
+            <img src="potfolio pic.jpg" alt="Zita Oyugbo">
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">About<span>Me.</span></div>
+            <ul>
+                <li><a href="#" >HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            
+                <li><a href="portfolio.html" class="active">PROJECTS</a></li>
+            
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <div class="container">
+    <h1>My Projects</h1>
+
+    <!-- Skills Section -->
+    <div class="section" id="skillsSection">
+      <button class="section-btn" onclick="toggleSection('skills')">Skills</button>
+      <div class="section-content" id="skillsDropdown">
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTML/CSS</li>
+          <li>Django</li>
+          <li>Machine Learning</li>
+          <li>Software Development</li>
+          <li>Database Management</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section" id="projectsSection">
+      <button class="section-btn" onclick="toggleSection('projects')">Projects</button>
+      <div class="section-content" id="projectsDropdown">
+        <ul>
+          <li onclick="showProject('Project 1: Portfolio Website')">Project 1: Portfolio Website</li>
+          <li onclick="showProject('Project 2: E-commerce Website')">Project 2: E-commerce Website</li>
+          <li onclick="showProject('Project 3: To-Do List App')">Project 3: To-Do List App</li>
+          <li onclick="showProject('Project 4: Chat Application')">Project 4: Chat Application</li>
+          <li onclick="showProject('Project 5: Weather App')">Project 5: Weather App</li>
+          <li onclick="showProject('Project 6: Budget Tracker')">Project 6: Budget Tracker</li>
+          <li onclick="showProject('Project 7: Blog Website')">Project 7: Blog Website</li>
+          <li onclick="showProject('Project 8: Task Manager')">Project 8: Task Manager</li>
+          <li onclick="showProject('Project 9: Portfolio Management System')">Project 9: Portfolio Management System</li>
+          <li onclick="showProject('Project 10: Cryptocurrency Tracker')">Project 10: Cryptocurrency Tracker</li>
+          <li onclick="showProject('Project 11: Quiz Application')">Project 11: Quiz Application</li>
+          <li onclick="showProject('Project 12: Personal Finance App')">Project 12: Personal Finance App</li>
+          <li onclick="showProject('Project 13: Online Library')">Project 13: Online Library</li>
+          <li onclick="showProject('Project 14: Calendar App')">Project 14: Calendar App</li>
+          <li onclick="showProject('Project 15: Job Board')">Project 15: Job Board</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project Details Section -->
+    <div id="projectDetails">
+      <!-- Project details will be displayed here when clicked -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

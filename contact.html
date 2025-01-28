@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1117;
+    color: #ffffff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; */
+}
+
+.container {
+    background-color: #161b22;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+        header {
+            background-color: #161b22;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: #facc15;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 400;
+            padding: 10px;
+        }
+        nav ul li a.active {
+            border-bottom: 2px solid #facc15;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0d1117;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #facc15;
+            color: #0d1117;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #e5b800;
+        }
+    </style>
+
+<header>
+    <nav>
+        <div class="logo">About<span>Me.</span></div>
+        <ul>
+            <li><a href="index.html" >HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        
+            <li><a href="portfolio.html">PROJECTS</a></li>
+        
+            <li><a href="contact.html" class="active">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Contact Me</h1>
+    <form>
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+    
+</body>
+</html>
